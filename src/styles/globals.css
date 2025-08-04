@@ -1,0 +1,23 @@
+/* Reset default margins/padding */
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Body fills entire screen */
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #1f1f1f;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/ Center the React root container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
