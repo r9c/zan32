@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with cl",
+      "type": "shell",
+      "command": "cl",
+      "args": [
+        "/std:c++17",
+        "/EHsc",
+        "main.cpp",
+        "totp.cpp",
+        "encryption.cpp",
+        "client.cpp",
+        "server.cpp",
+        "/Fooutput\\",            // Object files to 'output\'
+        "/I.",
+        "/link",
+        "/OUT:output\\Zan32.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"]
+    }
+  ]
+}
